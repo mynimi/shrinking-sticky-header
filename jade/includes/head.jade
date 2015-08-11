@@ -1,0 +1,17 @@
+head
+    meta(charset='UTF-8')
+    meta(http-equiv="expires", content="43200")     
+    if page.subtitle
+        title #{page.title} - #{page.subtitle}
+    else
+        title #{page.title}
+    if page.description
+        meta(name="description" content="#{page.description}")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='author', content='#{page.author}')
+    if page.tags
+        meta(name="keywords", content="#{page.tags}")        
+    link(href='http://fonts.googleapis.com/css?family=Source+Code+Pro:500,400|Roboto:400,300,300italic,500,500italic' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    link(rel='stylesheet', href='main.css')
+// head end
